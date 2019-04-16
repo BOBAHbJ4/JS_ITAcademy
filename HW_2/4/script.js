@@ -1,8 +1,21 @@
 'use strict'
-var x = prompt('Enter the number: ', 100);
+var number = prompt('Enter the number: ', 100);
+var number = parseInt(number);
+do {
+  var number = prompt('Enter the number: ', 100);
+} while (number == '' || number == null);
 
-function wordend(num, words) {
-  return words[((num % 100 > 10 && num % 100 < 15) || num % 10 > 4 || num % 10 == 0) ? 2 : (num % 10 == 1) ? 0 : 1];
-  }  
-  alert(x + ' ' + wordend(x, ['dollar', 'dollara', 'dollarov'])); // чтобы заметить разницу напишу в транслите, а не на английском
+function getNumWord(num, word1, word2, word5) {
+  var dd = num % 100;
+  if ((dd >= 11) && (dd <= 19))
+    return word5;
+  var d = num % 10;
+  if (d == 1)
+    return word1;
+  if ((d >= 2) && (d <= 4))
+    return word2;
+  return word5;
 
+}
+
+alert('You have a ' + number + ' ' + getNumWord(number, 'dollar', 'dollara', 'dollarov') + '!'); // чтобы заметить разницу напишу в транслите, а не на английском
