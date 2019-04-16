@@ -1,29 +1,27 @@
-"use strict";
+'use strict';
 
 function randomDiap(n, m) {
   return Math.floor(Math.random() * (m - n + 1)) + n;
 }
 
 function mood(colorsCount) {
-  var colors = {
-    red: 'красный',
-    orange: 'оранжевый',
-    yellow: 'жёлтый',
-    green: 'зелёный',
-    cyan: 'голубой',
-    blue: 'синий',
-    purple: 'фиолетовый'
-  };
+  var colors = ['', 'красный', 'оранжевый', 'жёлтый', 'зелёный', 'голубой', 'синий', 'фиолетовый'];
+
   console.log('цветов: ' + colorsCount);
+  for (var i = 1; i <= colorsCount; i++) {
+    var n = randomDiap(1, 7);
+    var colorName = colors[n];
 
-  for (var choose in colors) {
-      choose = randomDiap(1, 7);
-      //colorName = colors[n];
-      /*if (count[colors] > 1){
-
-      }*/
-      console.log(choose);
-    }
+    var arrColors = {
+      red: 'красный',
+      orange: 'оранжевый',
+      yellow: 'желтый',
+      green: 'зеленый',
+      cyan: 'голубой',
+      blue: 'синий',
+      purple: 'фиолетовый'
+    };
+    console.log(colorName);
   }
-
+}
 mood(5);
