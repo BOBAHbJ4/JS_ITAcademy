@@ -21,7 +21,8 @@ function mood(colorsCount) {
       blue: 'синий',
       purple: 'фиолетовый'
     };
-    console.log(colorName);
+    
+    console.log(arrColors);
   }
 }
 mood(5);
