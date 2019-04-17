@@ -1,4 +1,5 @@
 'use strict'
+
 var name = prompt('Enter your name:', 'Ivan');
 var surname = prompt('Enter your surname: ', 'Ivanov');
 var secondName = prompt('Enter your Second Name: ', 'Ivanovich');

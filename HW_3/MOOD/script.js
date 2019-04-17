@@ -11,7 +11,7 @@ function mood(colorsCount) {
   for (var i = 1; i <= colorsCount; i++) {
     var n = randomDiap(1, 7);
     var colorName = colors[n];
-
+    var colorName = colors.splice(n, 1)[0];
     var arrColors = {
       red: 'красный',
       orange: 'оранжевый',
@@ -22,7 +22,7 @@ function mood(colorsCount) {
       purple: 'фиолетовый'
     };
     
-    console.log(arrColors);
+    console.log(colorName);
   }
 }
-mood(5);
+mood(3);
