@@ -7,22 +7,17 @@ function randomDiap(n, m) {
 function mood(colorsCount) {
   var colors = ['', 'красный', 'оранжевый', 'жёлтый', 'зелёный', 'голубой', 'синий', 'фиолетовый'];
 
-  console.log('цветов: ' + colorsCount);
-  for (var i = 1; i <= colorsCount; i++) {
-    var n = randomDiap(1, 7);
-    var colorName = colors[n];
-    var colorName = colors.splice(n, 1)[0];
-    var arrColors = {
-      red: 'красный',
-      orange: 'оранжевый',
-      yellow: 'желтый',
-      green: 'зеленый',
-      cyan: 'голубой',
-      blue: 'синий',
-      purple: 'фиолетовый'
-    };
-    
-    console.log(colorName);
+  console.log( 'цветов: ' + colorsCount );
+  for ( var i=1; i<=colorsCount;) {
+    var n=randomDiap(1,7);                             ////random select
+    var colorName=colors[n];
+    if (colorName in colors) {
+      continue;
+    } else {
+      colors[colorName]=colorName;
+    }
+    console.log(colors[colorName]);
+    i++;
   }
 }
 mood(3);
