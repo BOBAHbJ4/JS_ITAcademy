@@ -1,0 +1,77 @@
+form {
+  width: 50%;
+  border: 2px dotted black;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: lightgray;
+  margin-left: auto;
+  margin-right: auto
+}
+
+label {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+label label {
+  position: relative;
+  display: inline-block;
+  margin-right: 35px;
+  padding-left: 30px;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-style: italic;
+}
+
+label label:first-of-type {
+  margin-left: 15%;
+}
+
+input {
+  position: absolute;
+  box-sizing: border-box;
+  left: 30%;
+}
+
+input[type=text] {
+  left: 30%;
+  width: 70%;
+}
+
+input[type=email] {
+  width: 50%;
+}
+
+input[type=radio] {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+input[type=checkbox] {
+  margin-left: 0;
+}
+
+input[type=submit] {
+  position: static;
+  background-color: lightyellow;
+}
+
+select {
+  width: 50%;
+  position: absolute;
+  box-sizing: border-box;
+  left: 30%;
+}
+
+textarea {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  min-height: 70px;
+  box-sizing: border-box;
+}

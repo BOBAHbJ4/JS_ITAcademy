@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>VALID_FORM</title>
+</head>
+
+<body>
+  <form method="POST" action="http://fe.it-academy.by/TestForm.php" target="_blank" name="form1" novalidate>
+    <table class="SNoBorders">
+      <tbody>
+        <tr>
+          <td>Разработчики:</td>
+          <td>
+            <input type="text" name="author" style="width: 453px">
+            <span class="error-message author-err"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Название сайта:</td>
+          <td>
+            <input type="text" name="title" style="width: 453px">
+            <span class="error-message title-err"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>URL сайта:</td>
+          <td>
+            <input type="text" name="url" style="width: 300px">
+            <span class="error-message url-err"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Дата запуска сайта:</td>
+          <td>
+            <input type="text" name="startdate" style="width: 80px">
+            <span class="error-message startdate-err"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Посетителей в сутки:</td>
+          <td>
+            <input type="text" name="persons" style="width: 80px">
+            <span class="error-message persons-err"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>E-mail для связи:</td>
+          <td>
+            <input type="text" name="mail" style="width: 200px">
+            <span class="error-message mail-err"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Рубрика каталога:</td>
+          <td style="padding-left: 1px">
+            <select name="rubric" style="width: 204px; margin-left: 2px">
+              <option value="0" selected="">Выберите рубрику</option>
+              <option value="1">Здоровье</option>
+              <option value="2">Домашний уют</option>
+              <option value="3">Бытовая техника</option>
+            </select>
+            <span class="error-message rubric-err"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Размещение:</td>
+          <td style="padding: 2px 0 2px 0">
+            <input type="radio" name="publik" value="1"><span class="SRadio8a">бесплатное</span>
+            <input type="radio" name="publik" value="2"><span class="SRadio8a">платное</span>
+            <input type="radio" name="publik" value="3"><span class="SRadio8a">VIP</span>
+            <span class="error-message publik-err"></span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 2px 0 3px 3px">Разрешить&nbsp;отзывы:</td>
+          <td>
+            <input type="checkbox" name="comments">
+            <span class="error-message comments-err"></span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Описание сайта:<br>
+            <textarea name="article" style="width: 608px; height: 50px"></textarea>
+            <span class="error-message article-err"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="Опубликовать">
+          </td>
+          <td>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

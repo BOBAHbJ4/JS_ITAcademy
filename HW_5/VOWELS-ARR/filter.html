@@ -1,0 +1,28 @@
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>filter</title>
+</head>
+
+<body>
+  <script>
+    'use strict'
+    var str = prompt('Введите строку', '').toLowerCase();
+
+    function sumVowels(str) {
+      var vowels = ['а', 'о', 'и', 'е', 'ё', 'э', 'ы', 'у', 'ю', 'я'];
+      var arr = str.split('');
+      var foundVowels = arr.filter(function (item, i, arr) {
+        return vowels.indexOf(item) != -1;
+      });
+      var sum = foundVowels.length;
+      return sum;
+    };
+    alert('В Вашей строке - ' + sumVowels(str) + ' гласных');
+  </script>
+</body>
+
+</html>
