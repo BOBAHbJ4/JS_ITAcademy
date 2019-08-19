@@ -1,0 +1,49 @@
+.clock {
+  position: relative;
+  background-color: yellow;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 2px solid gray;
+}
+
+.clock-num {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+.clock-center {
+  position: absolute;
+  border-radius: 50%;
+  background-color: red;
+  z-index: 10;
+}
+
+.clock-date {
+  position: absolute;
+  text-align: center;
+  line-height: 1;
+}
+
+.hand-hour {
+  position: absolute;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.hand-min {
+  position: absolute;
+  border-radius: 15px;
+  background-color: rgba(35, 3, 121, 0.5);
+}
+
+.hand-sec {
+  position: absolute;
+  border-radius: 50px;
+  background-color: rgba(255, 0, 0, 0.5);
+}

@@ -1,0 +1,16 @@
+#start {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.score {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#canvas {
+  display: block;
+  margin: 0 auto;
+}
